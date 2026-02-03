@@ -1,8 +1,9 @@
+import CardCourse from "@/layouts/DefaultLayout/components/CardCourse";
 function Home() {
     return (
-        <div>
-            <p>Home</p>
-        </div>
+        <>
+            <CardCourse />
+        </>
     );
 }
 
