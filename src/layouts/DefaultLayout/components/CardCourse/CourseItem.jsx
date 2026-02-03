@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./CardCourse.module.scss"; // Vẫn dùng chung file scss cũ cho tiện
+import styles from "./CardCourse.module.scss";
 
 function CourseItem({ data }) {
     return (
