@@ -2,7 +2,6 @@ import { Row, Col } from "@/components/GridSystem";
 import styles from "./CardCourse.module.scss";
 import CourseItem from "./CourseItem";
 import { courseList } from "./coursesData";
-
 function CardCourse() {
     return (
         <>

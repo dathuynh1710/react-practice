@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "./CardCourse.module.scss";
-
+import clsx from "clsx";
 function CourseItem({ data }) {
     return (
         <div className={styles.wrapper}>
-            {/* Logic hiển thị 1 item giữ nguyên như cũ */}
             <Link to={data.path || "/"} className={styles.cardImgWrap}>
                 <img src={data.thumbnail} alt={data.title} className={styles.cardImg} />
             </Link>
@@ -22,7 +21,7 @@ function CourseItem({ data }) {
 
                 <div className={styles.cardRow}>
                     {data.stats.map((stat, index) => (
-                        <div className={styles.cardMoreInfo} key={index}>
+                        <div className={clsx(styles.cardMoreInfoViews, styles.cardMoreInfo)} key={index}>
                             <img src={stat.icon} alt="" className={styles.cardMoreInfoIcon} />
                             <span className={styles.cardMoreInfoText}>{stat.text}</span>
                         </div>

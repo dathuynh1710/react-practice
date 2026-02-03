@@ -1,6 +1,6 @@
 import AppLogo from "../AppLogo";
 import MyCourses from "./partials/MyCourses";
-import SearchForm from "./partials/SearchForm";
+import SearchForm from "../SearchForm";
 import Notification from "./partials/Notification";
 import UserMenu from "./partials/UserMenu";
 import styles from "./Header.module.scss";
