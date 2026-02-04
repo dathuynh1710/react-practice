@@ -3,6 +3,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import AuthLayout from "@/layouts/AuthLayout";
 import DefaultLayout from "@/layouts/DefaultLayout";
 import Home from "@/pages/Home";
+import Profile from "@/pages/Profile";
 import ScrollDemo from "@/pages/ScrollDemo";
 
 // import Login from "@/pages/Login";
@@ -14,6 +15,7 @@ function AppRoutes() {
                 {/* Default Layout */}
                 <Route path="/" element={<DefaultLayout />}>
                     <Route index element={<Home />} />
+                    <Route path="/profile" element={<Profile />} />
                     <Route path="/scroll-demo" element={<ScrollDemo />} />
                 </Route>
 
