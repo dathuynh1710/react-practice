@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./CardCourse.module.scss";
 import clsx from "clsx";
+
+// Icons
+import iconStudent from "/icons/student.svg";
+import iconViews from "/icons/views.svg";
+import iconTime from "/icons/clock.svg";
+
 function CourseItem({ data }) {
     return (
         <div className={styles.wrapper}>
@@ -20,12 +26,20 @@ function CourseItem({ data }) {
                 </div>
 
                 <div className={styles.cardRow}>
-                    {data.stats.map((stat, index) => (
-                        <div className={clsx(styles.cardMoreInfoViews, styles.cardMoreInfo)} key={index}>
-                            <img src={stat.icon} alt="" className={styles.cardMoreInfoIcon} />
-                            <span className={styles.cardMoreInfoText}>{stat.text}</span>
-                        </div>
-                    ))}
+                    <div className={styles.cardMoreInfo}>
+                        <img src={iconStudent} alt="" className={styles.cardMoreInfoIcon} />
+                        <span className={styles.cardMoreInfoText}>{data.students}</span>
+                    </div>
+
+                    <div className={clsx(styles.cardMoreInfo, styles.cardMoreInfoViews)}>
+                        <img src={iconViews} alt="" className={styles.cardMoreInfoIcon} />
+                        <span className={styles.cardMoreInfoText}>{data.views}</span>
+                    </div>
+
+                    <div className={styles.cardMoreInfo}>
+                        <img src={iconTime} alt="" className={styles.cardMoreInfoIcon} />
+                        <span className={styles.cardMoreInfoText}>{data.time}</span>
+                    </div>
                 </div>
             </div>
         </div>

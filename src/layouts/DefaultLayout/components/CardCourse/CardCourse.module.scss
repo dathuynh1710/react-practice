@@ -86,7 +86,7 @@
 }
 
 .cardMoreInfoViews {
-    display: none !important;
+    display: none;
 
     @include screen("md") {
         display: block;
