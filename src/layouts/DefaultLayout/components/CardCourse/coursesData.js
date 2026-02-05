@@ -10,13 +10,6 @@ import imgCourseUbuntu from "/images/course-ubuntu.png";
 import imgCourseReact from "/images/course-react-base.png";
 import imgCourseNode from "/images/course-node-js.png";
 
-// Icons
-import iconStudent from "/icons/student.svg";
-import iconViews from "/icons/views.svg";
-import iconTime from "/icons/clock.svg";
-
-export const icons = { iconStudent, iconViews, iconTime };
-
 export const courseList = [
     {
         id: 1,
@@ -24,11 +17,9 @@ export const courseList = [
         title: "Kiến thức nhập môn IT",
         price: "Miễn phí",
         path: "/courses/nhap-mon",
-        stats: [
-            { icon: iconStudent, text: "136.257" },
-            { icon: iconViews, text: "9" },
-            { icon: iconTime, text: "3h12p" },
-        ],
+        students: "136.257",
+        views: "9",
+        time: "3h12p",
     },
     {
         id: 2,
@@ -36,11 +27,9 @@ export const courseList = [
         title: "Responsive Với Grid System",
         price: "Miễn phí",
         path: "/courses/responsive",
-        stats: [
-            { icon: iconStudent, text: "47.821" },
-            { icon: iconViews, text: "34" },
-            { icon: iconTime, text: "6h31p" },
-        ],
+        students: "47.821",
+        views: "34",
+        time: "6h31p",
     },
     {
         id: 3,
@@ -48,11 +37,9 @@ export const courseList = [
         title: "HTML CSS từ Zero đến Hero",
         price: "Miễn phí",
         path: "/courses/html-css",
-        stats: [
-            { icon: iconStudent, text: "200.298" },
-            { icon: iconViews, text: "117" },
-            { icon: iconTime, text: "19h4p" },
-        ],
+        students: "200.298",
+        views: "117",
+        time: "19h4p",
     },
     {
         id: 4,
@@ -60,11 +47,9 @@ export const courseList = [
         title: "HTML CSS Pro",
         price: "Miễn phí",
         path: "/courses/html-css-pro",
-        stats: [
-            { icon: iconStudent, text: "107.308" },
-            { icon: iconViews, text: "9" },
-            { icon: iconTime, text: "3h12p" },
-        ],
+        students: "107.308",
+        views: "9",
+        time: "3h12p",
     },
     {
         id: 5,
@@ -72,11 +57,9 @@ export const courseList = [
         title: "Ngôn ngữ Sass",
         price: "Miễn phí",
         path: "/courses/sass",
-        stats: [
-            { icon: iconStudent, text: "17.211" },
-            { icon: iconViews, text: "19" },
-            { icon: iconTime, text: "6h18p" },
-        ],
+        students: "17.211",
+        views: "19",
+        time: "6h18p",
     },
     {
         id: 6,
@@ -84,11 +67,9 @@ export const courseList = [
         title: "Lập trình Javascript Cơ Bản",
         price: "Miễn phí",
         path: "/courses/javascript-basic",
-        stats: [
-            { icon: iconStudent, text: "214.361" },
-            { icon: iconViews, text: "117" },
-            { icon: iconTime, text: "29h5p" },
-        ],
+        students: "214.361",
+        views: "117",
+        time: "29h5p",
     },
     {
         id: 7,
@@ -96,11 +77,9 @@ export const courseList = [
         title: "Lập trình Javascript Nâng Cao",
         price: "Miễn phí",
         path: "/courses/javascript-advanced",
-        stats: [
-            { icon: iconStudent, text: "41.121" },
-            { icon: iconViews, text: "19" },
-            { icon: iconTime, text: "8h32p" },
-        ],
+        students: "41.121",
+        views: "19",
+        time: "8h32p",
     },
     {
         id: 8,
@@ -108,11 +87,9 @@ export const courseList = [
         title: "Làm việc với Terminal & Ubuntu",
         price: "Miễn phí",
         path: "/courses/ubuntu",
-        stats: [
-            { icon: iconStudent, text: "21.204" },
-            { icon: iconViews, text: "28" },
-            { icon: iconTime, text: "4h59p" },
-        ],
+        students: "21.204",
+        views: "28",
+        time: "4h59p",
     },
     {
         id: 9,
@@ -120,11 +97,9 @@ export const courseList = [
         title: "Xây Dựng Website với ReactJs",
         price: "Miễn phí",
         path: "/courses/reactjs",
-        stats: [
-            { icon: iconStudent, text: "78.017" },
-            { icon: iconViews, text: "112" },
-            { icon: iconTime, text: "27h32p" },
-        ],
+        students: "78.017",
+        views: "112",
+        time: "27h32p",
     },
     {
         id: 10,
@@ -132,10 +107,8 @@ export const courseList = [
         title: "Node & ExpressJS",
         price: "Miễn phí",
         path: "/courses/nodejs",
-        stats: [
-            { icon: iconStudent, text: "48.941" },
-            { icon: iconViews, text: "36" },
-            { icon: iconTime, text: "12h8p" },
-        ],
+        students: "48.941",
+        views: "36",
+        time: "12h8p",
     },
 ];
