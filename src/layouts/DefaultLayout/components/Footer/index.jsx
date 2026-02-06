@@ -1,14 +1,14 @@
 import AppLogo from "../AppLogo";
-import { Row, Col } from "@/components/GridSystem";
+import { RowCols } from "@/components/GridSystem";
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.scss";
 
 function Footer() {
     return (
         <footer className={styles.footer}>
-            <Row>
+            <RowCols cols={{ base: 4, lg: 2, md: 1 }} className={styles.passRowCols}>
                 {/* Row1: Liên hệ */}
-                <Col span={12} sm={6} lg={3}>
+                <div className={styles.footerCol}>
                     <AppLogo white />
                     <ul className={styles.contactList}>
                         <li>
@@ -21,10 +21,10 @@ function Footer() {
                             <strong>Địa chỉ liên hệ:</strong> Số 1, ngõ 41, Trần Duy Hưng, Cầu Giấy, Hà Nội
                         </li>
                     </ul>
-                </Col>
+                </div>
 
                 {/* Row2: Về F8 */}
-                <Col span={12} sm={6} lg={3}>
+                <div className={styles.footerCol}>
                     <h3 className={styles.footerTitle}>VỀ F8</h3>
                     <ul className={styles.footerList}>
                         <li>
@@ -40,10 +40,10 @@ function Footer() {
                             <Link to="#!">Bảo mật</Link>
                         </li>
                     </ul>
-                </Col>
+                </div>
 
                 {/* Row3: Hỗ trợ */}
-                <Col span={12} sm={6} lg={3}>
+                <div className={styles.footerCol}>
                     <h3 className={styles.footerTitle}>HỖ TRỢ</h3>
                     <ul className={styles.footerList}>
                         <li>
@@ -59,10 +59,10 @@ function Footer() {
                             <Link to="#!">Quy định về giá</Link>
                         </li>
                     </ul>
-                </Col>
+                </div>
 
                 {/* Row4: Công cụ */}
-                <Col span={12} sm={6} lg={3}>
+                <div className={styles.footerCol}>
                     <h3 className={styles.footerTitle}>CÔNG CỤ</h3>
                     <ul className={styles.footerList}>
                         <li>
@@ -81,8 +81,8 @@ function Footer() {
                             <Link to="#!">CSS Grid generator</Link>
                         </li>
                     </ul>
-                </Col>
-            </Row>
+                </div>
+            </RowCols>
 
             <p className={styles.footerCopyright}>© 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.</p>
         </footer>

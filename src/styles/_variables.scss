@@ -1,7 +1,9 @@
+@use "sass:color";
 $containerWidth: 100%;
 
 // Color
 $primary-color: #f05123;
+$primary-dark: color.adjust($primary-color, $lightness: -10%);
 
 // Spacing
 $spacing-1: 4px;
@@ -12,14 +14,15 @@ $spacing-5: 20px;
 $spacing-6: 24px;
 
 :root {
-  --container-width: #{$containerWidth};
+    --container-width: #{$containerWidth};
 
-  --primary-color: #{$primary-color};
+    --primary-color: #{$primary-color};
+    --primary-dark: #{$primary-dark};
 
-  --spacing-1: #{$spacing-1};
-  --spacing-2: #{$spacing-2};
-  --spacing-3: #{$spacing-3};
-  --spacing-4: #{$spacing-4};
-  --spacing-5: #{$spacing-5};
-  --spacing-6: #{$spacing-6};
+    --spacing-1: #{$spacing-1};
+    --spacing-2: #{$spacing-2};
+    --spacing-3: #{$spacing-3};
+    --spacing-4: #{$spacing-4};
+    --spacing-5: #{$spacing-5};
+    --spacing-6: #{$spacing-6};
 }

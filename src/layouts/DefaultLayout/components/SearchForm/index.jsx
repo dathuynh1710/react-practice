@@ -18,11 +18,7 @@ function SearchForm() {
                     onBlur={() => setShowResult(false)}
                 />
             </div>
-            {showResult && (
-                <DropdownStyles>
-                    <SearchResult />
-                </DropdownStyles>
-            )}
+            {showResult && <SearchResult />}
         </div>
     );
 }
