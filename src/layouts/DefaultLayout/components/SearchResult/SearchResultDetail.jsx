@@ -6,7 +6,7 @@ function SearchResultDetail() {
     return (
         <div>
             {searchData.map((section, index) => (
-                <div key={index}>
+                <div key={index} className={styles.card}>
                     <div className={styles.cardHeader}>
                         <h3 className={styles.cardTitle}>{section.heading}</h3>
                         <Link to={section.linkMore} className={styles.cardViewMore}>
